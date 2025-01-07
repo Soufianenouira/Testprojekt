@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(7, 24, 32);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(10, 34, 44);
+    display: flex;
+    justify-content: flex-start;
+    padding: 24px 24px;
+    align-items: center;
+    
+    /* Sit on top */
+}
+
+.fotogramlogo {
+    width: 170px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.dialog-img {
+    max-width: 60%;
+    object-fit: contain;
+}
+
+.album-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    margin: 24px;
+    box-sizing: border-box;
+
+}
+
+.album-img:hover {
+    cursor: pointer;
+    border-width: 1px;
+    border-color: rgb(158, 187, 187);
+    border-style: solid;
+    opacity: 0.7;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.main-content {
+    max-width: 1440px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 56px;
+}
+
+.dialog-700 {
+    display: none;
+    justify-content: space-between;
+    background-image: url(./img/3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    height: 500px;
+    background-position: center;
+}
+
+footer {
+    background-color: rgb(10, 34, 44);
+    height: 166px;
+    display: flex;
+    justify-content: center;
+    /* Sit on top */
+}
+
+a {
+    color: white;
+    font-size: 36px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.dialog {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    top: 0;
+    justify-content: space-between;
+    width: 100vw;
+    /* Full width */
+    height: 100vh;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(246 209 209 / 50%);
+    /* Black w/ opacity */
+    border-radius: 12px;
+    z-index: 99;
+}
+
+@media(max-width:550px) {
+    h1 {
+        display: none;
+    }
+}
+
+@media(max-width:700px) {
+    .dialog-700 {
+        /*display: flex;*/
+        justify-content: space-between;
+    }
+}

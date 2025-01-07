@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fotogram</title>
+    <link id="favIcon" rel="icon" type="img" href="./favicon_fotogram.png">
+    
+</head>
+
+<body id="my-body" onload="renderAll()">
+    
+    <header id="my-header">
+        <img class="fotogramlogo" src="./favicon_fotogram.png" alt="fotogramlogo">
+        <h1>FOTOGRAM</h1>
+    </header>
+    <!--********************************************-->
+    <main >
+        <div class="main-content">
+            <h2>My personal photo album</h2>
+            <div id="my-dialog-700" class="dialog-700">
+                <a onclick="prev()" href="#"><img width="60px" src="./img/prev-pfeil2.png" alt=""></a>
+                <a onclick="next()" href="#"><img width="60px" src="./img/next-pfeil2.png" alt=""></a>
+            </div>
+            <div  id="album"></div>
+
+        </div>
+        <div onclick="closeDialog(event)" id="my-dialog" class="dialog">
+            <a onclick="prev()" href="#"><img width="60px" src="./img/prev-pfeil2.png" alt=""></a>
+            <img id="the-img" class="dialog-img" src="./img/12.jpg" alt="">
+            <a onclick="next()" href="#"><img width="60px" src="./img/next-pfeil2.png" alt=""></a>
+        </div>
+    </main>
+    <!--********************************************-->
+    <footer onclick="">
+        <img class="fotogramlogo" src="./favicon_fotogram.png" alt="fotogramlogo">
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
